@@ -1,6 +1,6 @@
 public class StringHasher{
     public static void main(String[] args){
-        String input="ImperialComputing";
+        String input="Computing";
         System.out.println("Input string: "+input);
         if(input!=null){
             long hashValue=computeDjb2Hash(input);
