@@ -14,7 +14,7 @@ public class StringHasher{
         long hash=5381;
         int len=str.length();
         for(int i=0;i<len;i++){
-            hash=((hash<<5)+hash)+str.charAt(i);
+            hash=(hash*32+hash)+str.charAt(i);
         }
         return hash;
     }
